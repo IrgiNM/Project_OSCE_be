@@ -15,6 +15,7 @@ class UserSerializer(serializers.ModelSerializer):
             'nama_lengkap',
             'kelas',
             'email',
+            'status',
             'password',
             'is_staff',
         ]
@@ -42,41 +43,15 @@ class UserSerializer(serializers.ModelSerializer):
         return data
 
     def create(self, validated_data):
-
-        # BULK CREATE
-        if isinstance(validated_data, list):
-
-            users = []
-
-            for data in validated_data:
-                password = data.pop('password')
-
-                user = User(
-                    username=data['email'],
-                    nim=data.get('nim'),
-                    nama_lengkap=data['nama_lengkap'],
-                    email=data['email'],
-                    kelas=data.get('kelas'),
-                    is_staff=data.get('is_staff', False),
-                )
-
-                user.set_password(password)
-                users.append(user)
-
-            for user in users:
-                user.save()
-
-            return users
-
-        # SINGLE CREATE
         password = validated_data.pop('password')
 
         user = User(
-            username=validated_data['email'],
+            username=validated_data.get('email'),
             nim=validated_data.get('nim'),
-            nama_lengkap=validated_data['nama_lengkap'],
-            email=validated_data['email'],
+            nama_lengkap=validated_data.get('nama_lengkap'),
+            email=validated_data.get('email'),
             kelas=validated_data.get('kelas'),
+            status=validated_data.get('status'),
             is_staff=validated_data.get('is_staff', False),
         )
 
@@ -141,6 +116,12 @@ class DetailSoalSOPSerializer(serializers.ModelSerializer):
             })
         return data
 
+
+# JENIS SOP SERIALIZER
+class JenisSOPSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = JenisSOP
+        fields = '__all__'
 
 # SOAL SOP SERIALIZER
 class SoalSOPSerializer(serializers.ModelSerializer):

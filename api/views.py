@@ -1,4 +1,4 @@
-from rest_framework import generics
+from rest_framework import generics, permissions
 from .models import *
 from .serializers import *
 
@@ -7,7 +7,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.authtoken.models import Token
-
+from django.shortcuts import get_object_or_404
+from django.db.models import OuterRef, Subquery
+from rest_framework.authentication import TokenAuthentication
 
 
 # USER
@@ -31,6 +33,14 @@ class RegisterUserView(generics.CreateAPIView):
 class UserListView(generics.ListAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+class UserMeView(generics.RetrieveAPIView):
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAuthenticated]
+    authentication_classes = [TokenAuthentication]
+
+    def get_object(self):
+        return self.request.user
 
 class UserDosenListView(generics.ListAPIView):
     serializer_class = UserSerializer
@@ -101,6 +111,29 @@ class LoginView(APIView):
         })
 
 
+# JENIS SOP
+class CreateJenisSOPView(generics.CreateAPIView):
+    queryset = JenisSOP.objects.all()
+    serializer_class = JenisSOPSerializer
+
+    def create(self, request, *args, **kwargs):
+        many = isinstance(request.data, list)
+        serializer = self.get_serializer(
+            data=request.data,
+            many=many
+        )
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(
+            serializer.data,
+            status=status.HTTP_201_CREATED
+        )
+    
+class ListJenisSOPView(generics.ListAPIView):
+    queryset = JenisSOP.objects.all()
+    serializer_class = JenisSOPSerializer
+    
+
 # SOAL SOP
 class CreateSoalSOPView(generics.CreateAPIView):
     queryset = SoalSOP.objects.all()
@@ -130,7 +163,7 @@ class ListSoalSOPByNamaView(generics.ListAPIView):
         nama_sop = self.kwargs['nama_sop']
         return SoalSOP.objects.filter(
             nama_sop=nama_sop
-        )
+        ).order_by('id')
 
 class UpdateSoalSOPView(generics.UpdateAPIView):
     queryset = SoalSOP.objects.all()
@@ -145,6 +178,19 @@ class DeleteSoalSOPView(generics.DestroyAPIView):
 class CreateDetailSOPView(generics.CreateAPIView):
     queryset = DetailSoalSOP.objects.all()
     serializer_class = DetailSoalSOPSerializer
+
+    def create(self, request, *args, **kwargs):
+        many = isinstance(request.data, list)
+        serializer = self.get_serializer(
+            data=request.data,
+            many=many
+        )
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(
+            serializer.data,
+            status=status.HTTP_201_CREATED
+        )
 
 class ListDetailSOPView(generics.ListAPIView):
     queryset = DetailSoalSOP.objects.all()
@@ -207,6 +253,35 @@ class ListTestView(generics.ListAPIView):
     queryset = Test.objects.all()
     serializer_class = TestSerializer
 
+class ListLatestTestView(generics.ListAPIView):
+    serializer_class = TestSerializer
+
+    def get_queryset(self):
+        latest_test_per_user_sop = Test.objects.filter(
+            user_id=OuterRef('user_id'),
+            sop=OuterRef('sop')
+        ).order_by('-created_at', '-id')
+
+        return Test.objects.filter(
+            id=Subquery(latest_test_per_user_sop.values('id')[:1])
+        ).order_by('user_id', 'sop')
+
+class ListTestByUserView(generics.ListAPIView):
+    serializer_class = TestSerializer
+
+    def get_queryset(self):
+        user_id = self.kwargs['user_id']
+
+        latest_test_per_sop = Test.objects.filter(
+            user_id=user_id,
+            sop=OuterRef('sop')
+        ).order_by('-created_at', '-id')
+
+        return Test.objects.filter(
+            user_id=user_id,
+            id=Subquery(latest_test_per_sop.values('id')[:1])
+        ).order_by('sop')
+
 class ListTestByIdView(generics.ListAPIView):
     serializer_class = TestSerializer
 
@@ -249,9 +324,54 @@ class ListDetailTestView(generics.ListAPIView):
     queryset = DetailTest.objects.all()
     serializer_class = DetailTestSerializer
 
+class ListDeatilTestByIdView(generics.ListAPIView):
+    serializer_class = DetailTestSerializer
+
+    def get_queryset(self):
+        sesi_id = self.kwargs.get('test_id')
+        return DetailTest.objects.filter(
+            test=sesi_id,
+        ).order_by('soal_sop')
+
 class UpdateDetailTestView(generics.UpdateAPIView):
     queryset = DetailTest.objects.all()
     serializer_class = DetailTestSerializer
+
+    def update(self, request, *args, **kwargs):
+        test_id = request.data.get('test')
+        soal_sop_id = request.data.get('soal_sop')
+        nilai_baru = request.data.get('nilai')
+
+        if not test_id:
+            return Response({
+                "message": "Field test wajib diisi"
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        if not soal_sop_id:
+            return Response({
+                "message": "Field soal_sop wajib diisi"
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        if nilai_baru is None:
+            return Response({
+                "message": "Field nilai wajib diisi"
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        detail_test = get_object_or_404(
+            DetailTest,
+            test_id=test_id,
+            soal_sop_id=soal_sop_id
+        )
+
+        detail_test.nilai = nilai_baru
+        detail_test.save()
+
+        serializer = self.get_serializer(detail_test)
+
+        return Response({
+            "message": "Nilai berhasil diupdate",
+            "data": serializer.data
+        }, status=status.HTTP_200_OK)
 
 class DeleteDetailTestView(generics.DestroyAPIView):
     queryset = DetailTest.objects.all()

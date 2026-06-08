@@ -1,0 +1,866 @@
+[
+  {
+    "nim": "2406059",
+    "nama_lengkap": "ADIAN HUSAENI",
+    "kelas": "D3KP2A",
+    "email": "2406059@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406098",
+    "nama_lengkap": "AI RINI SAFITRI",
+    "kelas": "D3KP2A",
+    "email": "2406098@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406062",
+    "nama_lengkap": "DYLLA AYU ABABIL",
+    "kelas": "D3KP2A",
+    "email": "2406062@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406082",
+    "nama_lengkap": "ELANIKA",
+    "kelas": "D3KP2A",
+    "email": "2406082@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406014",
+    "nama_lengkap": "FIRDAYANTI AMALIA PUTRI",
+    "kelas": "D3KP2A",
+    "email": "2406014@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406071",
+    "nama_lengkap": "HADYAN CAYAPATA ASWANGGA",
+    "kelas": "D3KP2A",
+    "email": "2406071@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406077",
+    "nama_lengkap": "IMROHTUL AZIZA",
+    "kelas": "D3KP2A",
+    "email": "2406077@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406004",
+    "nama_lengkap": "INTAN TRINOVI",
+    "kelas": "D3KP2A",
+    "email": "2406004@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406010",
+    "nama_lengkap": "ISAURA PUTRI RAHAYU",
+    "kelas": "D3KP2A",
+    "email": "2406010@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406063",
+    "nama_lengkap": "MARSHANDA TATIANA SOMANTRI",
+    "kelas": "D3KP2A",
+    "email": "2406063@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406094",
+    "nama_lengkap": "MAULANA IQBAL",
+    "kelas": "D3KP2A",
+    "email": "2406094@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406017",
+    "nama_lengkap": "MILA DWI HANNA",
+    "kelas": "D3KP2A",
+    "email": "2406017@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406039",
+    "nama_lengkap": "MOUREN ANGEL PASARIBU",
+    "kelas": "D3KP2A",
+    "email": "2406039@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406095",
+    "nama_lengkap": "NADINE AYU PRADESTA",
+    "kelas": "D3KP2A",
+    "email": "2406095@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406011",
+    "nama_lengkap": "NIGITA FITRIA",
+    "kelas": "D3KP2A",
+    "email": "2406011@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406058",
+    "nama_lengkap": "NIKEN CISHANUM",
+    "kelas": "D3KP2A",
+    "email": "2406058@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406057",
+    "nama_lengkap": "OKTAFITRIA ALIF",
+    "kelas": "D3KP2A",
+    "email": "2406057@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406023",
+    "nama_lengkap": "PRADANI SEPTIANI",
+    "kelas": "D3KP2A",
+    "email": "2406023@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406110",
+    "nama_lengkap": "RIKE LISTIANI",
+    "kelas": "D3KP2A",
+    "email": "2406110@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406050",
+    "nama_lengkap": "RINDI ANTIKA",
+    "kelas": "D3KP2A",
+    "email": "2406050@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406061",
+    "nama_lengkap": "SHABRINA AULIA PUTRI RISWARA",
+    "kelas": "D3KP2A",
+    "email": "2406061@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406040",
+    "nama_lengkap": "SITI NASYWA FAKHIRA",
+    "kelas": "D3KP2A",
+    "email": "2406040@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406006",
+    "nama_lengkap": "SOFI NURALIYAH",
+    "kelas": "D3KP2A",
+    "email": "2406006@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406093",
+    "nama_lengkap": "TRIVANI AULIA RAMADANI",
+    "kelas": "D3KP2A",
+    "email": "2406093@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406060",
+    "nama_lengkap": "ULAN PUSPITA",
+    "kelas": "D3KP2A",
+    "email": "2406060@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406015",
+    "nama_lengkap": "WINA WINARTI",
+    "kelas": "D3KP2A",
+    "email": "2406015@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406003",
+    "nama_lengkap": "YAYAN IRIYANTI",
+    "kelas": "D3KP2A",
+    "email": "2406003@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406097",
+    "nama_lengkap": "ZALVA ZAHIA PUTRIHATUL HIDAYAT",
+    "kelas": "D3KP2A",
+    "email": "2406097@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406103",
+    "nama_lengkap": "ADES IRMALA",
+    "kelas": "D3KP2B",
+    "email": "2406103@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406066",
+    "nama_lengkap": "ARINA MANASIKHANA",
+    "kelas": "D3KP2B",
+    "email": "2406066@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406069",
+    "nama_lengkap": "AYU ANJANI",
+    "kelas": "D3KP2B",
+    "email": "2406069@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406054",
+    "nama_lengkap": "ELYTA SETIA UTAMI",
+    "kelas": "D3KP2B",
+    "email": "2406054@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406021",
+    "nama_lengkap": "FIRA FAUJIAH RAHARJO",
+    "kelas": "D3KP2B",
+    "email": "2406021@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406105",
+    "nama_lengkap": "GINA NURUL AINI",
+    "kelas": "D3KP2B",
+    "email": "2406105@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406067",
+    "nama_lengkap": "GITA NURHIDAYAH",
+    "kelas": "D3KP2B",
+    "email": "2406067@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406064",
+    "nama_lengkap": "HAMZAH AZIZAH AL AMIN",
+    "kelas": "D3KP2B",
+    "email": "2406064@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406022",
+    "nama_lengkap": "INTAN APRIANI",
+    "kelas": "D3KP2B",
+    "email": "2406022@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406007",
+    "nama_lengkap": "KASANAH",
+    "kelas": "D3KP2B",
+    "email": "2406007@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406037",
+    "nama_lengkap": "LINTANG RAMADANI",
+    "kelas": "D3KP2B",
+    "email": "2406037@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406036",
+    "nama_lengkap": "LINTANG SINTIA AGUSTIN",
+    "kelas": "D3KP2B",
+    "email": "2406036@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406070",
+    "nama_lengkap": "MAYSAYU PUTRI FADILAH",
+    "kelas": "D3KP2B",
+    "email": "2406070@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406019",
+    "nama_lengkap": "MELANI TRI ARTIKA DEVI",
+    "kelas": "D3KP2B",
+    "email": "2406019@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406096",
+    "nama_lengkap": "MOHAMMAD RIFQI FAIZ ADZIM",
+    "kelas": "D3KP2B",
+    "email": "2406096@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406065",
+    "nama_lengkap": "MUHAMMAD ABIYYU RAMADHAN",
+    "kelas": "D3KP2B",
+    "email": "2406065@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406009",
+    "nama_lengkap": "NADA FITRI",
+    "kelas": "D3KP2B",
+    "email": "2406009@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406100",
+    "nama_lengkap": "PUTRI VANESA ANGRAENI",
+    "kelas": "D3KP2B",
+    "email": "2406100@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406102",
+    "nama_lengkap": "RAKHMAH RIZKI IMAMI",
+    "kelas": "D3KP2B",
+    "email": "2406102@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406018",
+    "nama_lengkap": "RANI PELANYA ROSSA",
+    "kelas": "D3KP2B",
+    "email": "2406018@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406032",
+    "nama_lengkap": "RISKA AMELIA",
+    "kelas": "D3KP2B",
+    "email": "2406032@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406113",
+    "nama_lengkap": "SABRINA NURAENI",
+    "kelas": "D3KP2B",
+    "email": "2406113@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406008",
+    "nama_lengkap": "SELFI YANI PUTRI",
+    "kelas": "D3KP2B",
+    "email": "2406008@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406104",
+    "nama_lengkap": "TAUFIQURRAHMAN",
+    "kelas": "D3KP2B",
+    "email": "2406104@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406051",
+    "nama_lengkap": "WAHYUNI",
+    "kelas": "D3KP2B",
+    "email": "2406051@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406027",
+    "nama_lengkap": "WINA MELANI SAPUTRI",
+    "kelas": "D3KP2B",
+    "email": "2406027@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406068",
+    "nama_lengkap": "ZAHRATU AURALIA",
+    "kelas": "D3KP2B",
+    "email": "2406068@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406016",
+    "nama_lengkap": "ALDI RIFQI PRIADI",
+    "kelas": "D3KP2C",
+    "email": "2406016@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406108",
+    "nama_lengkap": "AMELIA KONTESA",
+    "kelas": "D3KP2C",
+    "email": "2406108@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406041",
+    "nama_lengkap": "ANGGUN ALFIYANA",
+    "kelas": "D3KP2C",
+    "email": "2406041@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406028",
+    "nama_lengkap": "AZAHRAH SIFANAH",
+    "kelas": "D3KP2C",
+    "email": "2406028@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406045",
+    "nama_lengkap": "CANTIKA AULIA",
+    "kelas": "D3KP2C",
+    "email": "2406045@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406038",
+    "nama_lengkap": "DEMSY AMIRULLAH KUDUS",
+    "kelas": "D3KP2C",
+    "email": "2406038@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406044",
+    "nama_lengkap": "EPA PUJI PAUJIYAH",
+    "kelas": "D3KP2C",
+    "email": "2406044@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406075",
+    "nama_lengkap": "FRISDHA FEBRYANI",
+    "kelas": "D3KP2C",
+    "email": "2406075@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406076",
+    "nama_lengkap": "JENY PUTRI YURISMAN",
+    "kelas": "D3KP2C",
+    "email": "2406076@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406089",
+    "nama_lengkap": "KIKY ELISA",
+    "kelas": "D3KP2C",
+    "email": "2406089@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406107",
+    "nama_lengkap": "LAURA APRILIA GUNAWAN",
+    "kelas": "D3KP2C",
+    "email": "2406107@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406072",
+    "nama_lengkap": "MUHAMMAD FARLYN AMRULLAH",
+    "kelas": "D3KP2C",
+    "email": "2406072@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406109",
+    "nama_lengkap": "NABILLA NUR FITRIYANI",
+    "kelas": "D3KP2C",
+    "email": "2406109@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406112",
+    "nama_lengkap": "NADZWA NURFILAILIA SYAHPUTRI",
+    "kelas": "D3KP2C",
+    "email": "2406112@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406046",
+    "nama_lengkap": "OCHA FILZAH SYAHIRA",
+    "kelas": "D3KP2C",
+    "email": "2406046@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406033",
+    "nama_lengkap": "PUTIK NURFADILLAH",
+    "kelas": "D3KP2C",
+    "email": "2406033@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406111",
+    "nama_lengkap": "PUTRI WULANDARI",
+    "kelas": "D3KP2C",
+    "email": "2406111@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406106",
+    "nama_lengkap": "QOBILAH",
+    "kelas": "D3KP2C",
+    "email": "2406106@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406029",
+    "nama_lengkap": "REGINA PUSPA CAHYANI",
+    "kelas": "D3KP2C",
+    "email": "2406029@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406024",
+    "nama_lengkap": "ROSIDAH",
+    "kelas": "D3KP2C",
+    "email": "2406024@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406074",
+    "nama_lengkap": "SRI CANTIKA",
+    "kelas": "D3KP2C",
+    "email": "2406074@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406090",
+    "nama_lengkap": "TIARA PERTIWI",
+    "kelas": "D3KP2C",
+    "email": "2406090@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406025",
+    "nama_lengkap": "WIDYANI",
+    "kelas": "D3KP2C",
+    "email": "2406025@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406078",
+    "nama_lengkap": "YAYANG ANGGI RAMADANI",
+    "kelas": "D3KP2C",
+    "email": "2406078@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406048",
+    "nama_lengkap": "ZAHWA JANUARI PUTRI",
+    "kelas": "D3KP2C",
+    "email": "2406048@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406118",
+    "nama_lengkap": "APRILIA LUMIANTI",
+    "kelas": "D3KP2D",
+    "email": "2406118@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406030",
+    "nama_lengkap": "ATIKA PERMATA SARI",
+    "kelas": "D3KP2D",
+    "email": "2406030@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406083",
+    "nama_lengkap": "CHAIRUL BASTIAWAN RAHMAT",
+    "kelas": "D3KP2D",
+    "email": "2406083@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406055",
+    "nama_lengkap": "CUT BALQIS RAUDATUL AISYIH",
+    "kelas": "D3KP2D",
+    "email": "2406055@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406086",
+    "nama_lengkap": "DESI OKTAVIANI",
+    "kelas": "D3KP2D",
+    "email": "2406086@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406034",
+    "nama_lengkap": "DIAN FARIDA",
+    "kelas": "D3KP2D",
+    "email": "2406034@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406084",
+    "nama_lengkap": "DINA AULIA FADILAH",
+    "kelas": "D3KP2D",
+    "email": "2406084@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406116",
+    "nama_lengkap": "FANISA NABILA NURAIDA",
+    "kelas": "D3KP2D",
+    "email": "2406116@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406042",
+    "nama_lengkap": "GILANG ADHA RIZKY",
+    "kelas": "D3KP2D",
+    "email": "2406042@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406088",
+    "nama_lengkap": "HASNAA LAILI",
+    "kelas": "D3KP2D",
+    "email": "2406088@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406080",
+    "nama_lengkap": "HIDAYAH DWI JAYANTI LAELI",
+    "kelas": "D3KP2D",
+    "email": "2406080@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406114",
+    "nama_lengkap": "IIN TANIYAH",
+    "kelas": "D3KP2D",
+    "email": "2406114@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406013",
+    "nama_lengkap": "INDRIYANI SAFI'AH",
+    "kelas": "D3KP2D",
+    "email": "2406013@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406052",
+    "nama_lengkap": "MARDIAN PUTRI ANGGUN",
+    "kelas": "D3KP2D",
+    "email": "2406052@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406081",
+    "nama_lengkap": "MAUDI APRILIANY NUR WULAN",
+    "kelas": "D3KP2D",
+    "email": "2406081@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406020",
+    "nama_lengkap": "NABILA SEPTIANINGSIH",
+    "kelas": "D3KP2D",
+    "email": "2406020@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406031",
+    "nama_lengkap": "NABILATUS SA'ADAH",
+    "kelas": "D3KP2D",
+    "email": "2406031@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406002",
+    "nama_lengkap": "NAILLA ISFAHANI AZZAHRA",
+    "kelas": "D3KP2D",
+    "email": "2406002@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406053",
+    "nama_lengkap": "NAZWA RAFA KINAYA",
+    "kelas": "D3KP2D",
+    "email": "2406053@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406047",
+    "nama_lengkap": "NOVIOLA SAFITRI",
+    "kelas": "D3KP2D",
+    "email": "2406047@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406085",
+    "nama_lengkap": "RACHMA OKTAVIANI SUSILO",
+    "kelas": "D3KP2D",
+    "email": "2406085@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406043",
+    "nama_lengkap": "RISA AYU",
+    "kelas": "D3KP2D",
+    "email": "2406043@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406115",
+    "nama_lengkap": "SARAH FAIRUZ ZAHIRAH",
+    "kelas": "D3KP2D",
+    "email": "2406115@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406092",
+    "nama_lengkap": "UKHWATUN KHASANAH",
+    "kelas": "D3KP2D",
+    "email": "2406092@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406056",
+    "nama_lengkap": "YUDA ADI PERMANA",
+    "kelas": "D3KP2D",
+    "email": "2406056@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406079",
+    "nama_lengkap": "ZASKYA KAYLA SYAHARANI",
+    "kelas": "D3KP2D",
+    "email": "2406079@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406087",
+    "nama_lengkap": "ZISKA QIRANA",
+    "kelas": "D3KP2D",
+    "email": "2406087@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  },
+  {
+    "nim": "2406035",
+    "nama_lengkap": "ZIYAD ALVIN HAMDI",
+    "kelas": "D3KP2D",
+    "email": "2406035@osce.local",
+    "password": "12345678",
+    "is_staff": false
+  }
+]

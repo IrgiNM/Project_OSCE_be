@@ -7,9 +7,18 @@ class User(AbstractUser):
     nim = models.CharField(max_length=50, unique=True, null=True, blank=True)
     nama_lengkap = models.CharField(max_length=100, null=True, blank=True)
     kelas = models.CharField(max_length=20, null=True, blank=True)
+    status = models.CharField(blank=True, null=True)
 
     def __str__(self):
         return self.nama_lengkap
+
+
+# JENIS SOP
+class JenisSOP(models.Model):
+    judul = models.TextField()
+
+    def __str__(self):
+        return self.judul[:50]
 
 
 # SOAL SOP
@@ -17,9 +26,10 @@ class SoalSOP(models.Model):
     soal = models.TextField()
     category = models.CharField(blank=True, null=True)
     nama_sop = models.CharField(blank=True, null=True)
+    bobot = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.soal[:50]
+        return self.soal[:50] + " - " + self.nama_sop[:50]
 
 
 # DETAIL SOAL SOP
@@ -29,10 +39,12 @@ class DetailSoalSOP(models.Model):
         on_delete=models.CASCADE,
         related_name='jenis_soal'
     )
+    bobot = models.IntegerField(default=0)
     deskripsi_soal = models.TextField()
 
     def __str__(self):
         return self.sop.soal[:50] + " - " + self.deskripsi_soal[:50]
+
 
 # TEST SESI UJIAN
 class SesiUjian(models.Model):
@@ -41,6 +53,7 @@ class SesiUjian(models.Model):
 
     def __str__(self):
         return self.nama_sesi
+    
     
 # TEST SISWA
 class Test(models.Model):

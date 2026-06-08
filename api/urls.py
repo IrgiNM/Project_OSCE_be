@@ -7,12 +7,17 @@ urlpatterns = [
     # USER
     path('login/', LoginView.as_view(), name='api_login'),
     path('user/register/', RegisterUserView.as_view()),
+    path('user/me/', UserMeView.as_view()),
     path('user/list/', UserListView.as_view()),
     path('user/list/dosen/', UserDosenListView.as_view()),
     path('user/list/mahasiswa/', UserMahasiswaListView.as_view()),
     path('user/delete/<int:pk>/', DeleteUserView.as_view()),
     path('user/delete/all/', DeleteAllUserView.as_view()),
 
+    # JENIS SOP
+    path('jenis-sop/create/', CreateJenisSOPView.as_view()),
+    path('jenis-sop/list/', ListJenisSOPView.as_view()),
+    
     # SOAL SOP
     path('soal-sop/create/', CreateSoalSOPView.as_view()),
     path('soal-sop/list/', ListSoalSOPView.as_view()),
@@ -36,6 +41,8 @@ urlpatterns = [
     path('test/create/', CreateTestView.as_view()),
     path('test/list/', ListTestView.as_view()),
     path('test/list/<int:sesi_id>/', ListTestByIdView.as_view()),
+    path('test/list/user/<int:user_id>/', ListTestByUserView.as_view()),
+    path('test/list/last/', ListLatestTestView.as_view()),
     path('test/update/<int:pk>/', UpdateTestView.as_view()),
     path('test/delete/<int:pk>/', DeleteTestView.as_view()),
     path('test/delete/all/', DeleteAllTestView.as_view()),
@@ -43,6 +50,7 @@ urlpatterns = [
     # DETAIL TEST
     path('detail-test/create/', CreateDetailTestView.as_view()),
     path('detail-test/list/', ListDetailTestView.as_view()),
-    path('detail-test/update/<int:pk>/', UpdateDetailTestView.as_view()),
+    path('detail-test/list/<int:test_id>/', ListDeatilTestByIdView.as_view()),
+    path('detail-test/update/', UpdateDetailTestView.as_view()),
     path('detail-test/delete/<int:pk>/', DeleteDetailTestView.as_view()),
 ]

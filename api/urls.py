@@ -28,6 +28,7 @@ urlpatterns = [
     # DETAIL SOP
     path('detail-sop/create/', CreateDetailSOPView.as_view()),
     path('detail-sop/list/', ListDetailSOPView.as_view()),
+    path('detail-sop/<int:id_sop>/', ListDetailSOPBySopView.as_view()),
     path('detail-sop/update/<int:pk>/', UpdateDetailSOPView.as_view()),
     path('detail-sop/delete/<int:pk>/', DeleteDetailSOPView.as_view()),
 

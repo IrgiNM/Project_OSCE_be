@@ -196,6 +196,13 @@ class ListDetailSOPView(generics.ListAPIView):
     queryset = DetailSoalSOP.objects.all()
     serializer_class = DetailSoalSOPSerializer
 
+class ListDetailSOPBySopView(generics.ListAPIView):
+    serializer_class = DetailSoalSOPSerializer
+
+    def get_queryset(self):
+        id_sop = self.kwargs.get("id_sop")
+        return DetailSoalSOP.objects.filter(sop=id_sop)
+
 class UpdateDetailSOPView(generics.UpdateAPIView):
     queryset = DetailSoalSOP.objects.all()
     serializer_class = DetailSoalSOPSerializer

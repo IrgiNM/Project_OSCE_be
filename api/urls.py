@@ -42,6 +42,7 @@ urlpatterns = [
     path('test/create/', CreateTestView.as_view()),
     path('test/list/', ListTestView.as_view()),
     path('test/list/<int:sesi_id>/', ListTestByIdView.as_view()),
+    path('test/sesi/<int:sesi_id>/sop/<str:sop>/', ListTestBySesiAndSOPView.as_view()),
     path('test/list/user/<int:user_id>/', ListTestByUserView.as_view()),
     path('test/list/last/', ListLatestTestView.as_view()),
     path('test/update/<int:pk>/', UpdateTestView.as_view()),

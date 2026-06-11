@@ -296,6 +296,19 @@ class ListTestByIdView(generics.ListAPIView):
         sesi_id = self.kwargs.get('sesi_id')
         return Test.objects.filter(
             sesi=sesi_id,
+            # user__is_staff=False
+        )
+    
+class ListTestBySesiAndSOPView(generics.ListAPIView):
+    serializer_class = TestSerializer
+
+    def get_queryset(self):
+        sesi_id = self.kwargs.get('sesi_id')
+        sop = self.kwargs.get('sop')
+
+        return Test.objects.filter(
+            sesi=sesi_id,
+            sop=sop,
             user__is_staff=False
         )
 

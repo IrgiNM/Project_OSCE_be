@@ -108,12 +108,16 @@ class DetailSoalSOPSerializer(serializers.ModelSerializer):
 
     def validate(self, data):
         deskripsi_soal = data.get('deskripsi_soal')
+        sop = data.get('sop')
+
         if DetailSoalSOP.objects.filter(
-            deskripsi_soal=deskripsi_soal
+            deskripsi_soal=deskripsi_soal,
+            sop=sop
         ).exists():
             raise serializers.ValidationError({
-                'deskripsi_soal': 'Deskripsi soal sudah ada'
+                'detail_soal': 'Deskripsi soal dengan SOP ini sudah ada'
             })
+
         return data
 
 

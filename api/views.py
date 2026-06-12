@@ -211,6 +211,18 @@ class DeleteDetailSOPView(generics.DestroyAPIView):
     queryset = DetailSoalSOP.objects.all()
     serializer_class = DetailSoalSOPSerializer
 
+class DeleteAllDetailSOPView(APIView):
+    def delete(self, request):
+        total_data = DetailSoalSOP.objects.count()
+        DetailSoalSOP.objects.all().delete()
+        return Response(
+            {
+                "message": "Semua data DetailSoalSOP berhasil dihapus",
+                "total_deleted": total_data,
+            },
+            status=status.HTTP_200_OK
+        )
+
 
 # TEST SESI
 class CreateSesiTestView(generics.CreateAPIView):

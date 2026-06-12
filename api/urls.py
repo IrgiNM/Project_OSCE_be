@@ -55,4 +55,5 @@ urlpatterns = [
     path('detail-test/list/<int:test_id>/', ListDeatilTestByIdView.as_view()),
     path('detail-test/update/', UpdateDetailTestView.as_view()),
     path('detail-test/delete/<int:pk>/', DeleteDetailTestView.as_view()),
+    path('detail-test/delete/all/', DeleteAllDetailSOPView.as_view()),
 ]

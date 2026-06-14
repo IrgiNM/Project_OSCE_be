@@ -411,7 +411,7 @@ class DeleteDetailTestView(generics.DestroyAPIView):
 
 class DeleteDetailTestBySOPView(APIView):
     def delete(self, request, sop_id):
-        detail_tests = DetailTest.objects.filter(soal_sop_id=sop_id)
+        detail_tests = DetailTest.objects.filter(soal_sop=sop_id)
 
         if not detail_tests.exists():
             return Response(

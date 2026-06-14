@@ -31,7 +31,7 @@ urlpatterns = [
     path('detail-sop/<int:id_sop>/', ListDetailSOPBySopView.as_view()),
     path('detail-sop/update/<int:pk>/', UpdateDetailSOPView.as_view()),
     path('detail-sop/delete/<int:pk>/', DeleteDetailSOPView.as_view()),
-    path('detail-sop/delete-by-sop/<int:sop_id>/', DeleteDetailTestBySOPView.as_view()),
+    path('detail-sop/delete-by-sop/<int:sop_id>/', DeleteDetailSoalSOPBySOPView.as_view()),
 
     # SESI TEST
     path('sesi/create/', CreateSesiTestView.as_view()),

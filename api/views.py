@@ -409,9 +409,9 @@ class DeleteDetailTestView(generics.DestroyAPIView):
     queryset = DetailTest.objects.all()
     serializer_class = DetailTestSerializer
 
-class DeleteDetailTestBySOPView(APIView):
+class DeleteDetailSoalSOPBySOPView(APIView):
     def delete(self, request, sop_id):
-        detail_tests = DetailTest.objects.filter(soal_sop=sop_id)
+        detail_tests = DetailSoalSOP.objects.filter(sop=sop_id)
 
         if not detail_tests.exists():
             return Response(

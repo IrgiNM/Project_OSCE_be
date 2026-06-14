@@ -408,3 +408,25 @@ class UpdateDetailTestView(generics.UpdateAPIView):
 class DeleteDetailTestView(generics.DestroyAPIView):
     queryset = DetailTest.objects.all()
     serializer_class = DetailTestSerializer
+
+class DeleteDetailTestBySOPView(APIView):
+    def delete(self, request, sop_id):
+        detail_tests = DetailTest.objects.filter(soal_sop_id=sop_id)
+
+        if not detail_tests.exists():
+            return Response(
+                {"message": "Data DetailTest dengan SOP tersebut tidak ditemukan"},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        total_deleted = detail_tests.count()
+        detail_tests.delete()
+
+        return Response(
+            {
+                "message": "Data DetailTest berhasil dihapus",
+                "total_deleted": total_deleted,
+                "sop_id": sop_id
+            },
+            status=status.HTTP_200_OK
+        )
